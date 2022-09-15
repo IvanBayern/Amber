@@ -991,7 +991,7 @@ img {
 /* Contacts */
 .contacts {
   background-color: var(--secondary-bg--mode-dark);
-  background-image: linear-gradient(to right, var(--secondary-bg--mode-dark), var(--secondary-bg--mode-dark)), url(../images/contacts/contacts-bg.png);
+  background-image: linear-gradient(to right, var(--secondary-bg--mode-dark), var(--secondary-bg--mode-dark)), url(../images/contacts/1.jpg);
   background-position: top left, top 50% left calc(50% + 312px);
   background-repeat: no-repeat;
   background-size: 50%, cover;
