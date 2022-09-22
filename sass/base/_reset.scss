@@ -4,6 +4,9 @@ h3,
 h4,
 p {
   margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 h1:last-child,
@@ -27,4 +30,10 @@ p:last-child {
 
 html {
   scroll-behavior: smooth;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }

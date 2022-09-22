@@ -287,8 +287,8 @@
             Direct supplies, advanced production, original quality, broad variety of amber types and colors, individual wholesale
             terms, long-term contracting, multi-language support. <br> Assortment
             Amber: Baltic, Ukrainian, Dominican, Mexican, Burmese, Chinese, Indian, Colombian, Spanish, French, Golling, Rumanite,
-            Belarusian, Duxite, Switzerland, Dolomites, Simetite, Nicaraguan, Canadian, New Jersey, North Carolina, Dammar, Borneo,
-            Japanese, Jordan, Lebanon, Sarawak, Philippines, Taimyr, Sachalin, Ethiopian, Madagascar, Australian
+             Duxite, Switzerland, Dolomites, Simetite, Nicaraguan, Canadian, New Jersey, North Carolina, Dammar, Borneo,
+            Japanese, Jordan, Lebanon, Sarawak, Philippines, Ethiopian, Madagascar, Australian
            
 
 
@@ -625,7 +625,7 @@
                   <svg class="contacts-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-map-pin"></use>
                   </svg>
-                  AMBER GLOBAL GROUP LIMITED, SHEUNG WAN,
+                  AMBER GLOBAL GROUP SHEUNG WAN,
                   HK
 
                 </address>
@@ -636,7 +636,22 @@
                     <use href="./images/icons.svg#icon-phone"></use>
                   </svg>
                   +8617768327811</a
-                >
+                ></li>
+                <li class="contacts-item">
+                <a class="contacts-link link" href="tel:+48532281146">
+                  <svg class="contacts-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+                  +48532281146</a>
+             </li>
+              <li class="contacts-item">
+                <a class="contacts-link link" href="tel:+4916092167927">
+                  <svg class="contacts-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+                  +4916092167927</a>
+              </li>
+              <li class="contacts-item">
                 <a class="contacts-link link" href="tel:+48532281146">
                   <svg class="contacts-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-phone"></use>
@@ -688,11 +703,73 @@
         <!-- <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur,
           ipsum.
-        </p> -->
+        </p>  -->
+<form class="form1 modal-form1" netlify name="modal-form" autocomplete="on" novalidate id="form" action="#" method="post">
+  <fieldset>
+    <div class="form__field1">
+      <label class="form__label1 " for="user-name">Name</label>
+      <div class="form__inner1">
+        <input class="form__input1 _req1" id="user-name" type="text" name="name">
+        <svg width="18px" height="18px" class="form__icon" aria-hidden="true">
+          <use href="./images/icons.svg#icon-person-black"></use>
+        </svg>
+      </div>
 
+    </div>
+    <div class="form__field1">
+      <label class="form__label1" for="user-tel">Tel</label>
+      <div class="form__inner1">
+        <input class="form__input1" id="user-tel" type="tel" name="tel">
+        <svg width="18px" height="18px" class="form__icon" aria-hidden="true">
+          <use href="./images/icons.svg#icon-phone-black"></use>
+        </svg>
+      </div>
+
+    </div>
+    <div class="form__field1">
+      <label class="form__label1" for="user-email">Email</label>
+      <div class="form__inner1">
+        <input class="form__input1 _req1 _email1" id="user-email" type="text" name="email">
+        <svg width="18px" height="18px" class="form__icon" aria-hidden="true">
+          <use href="./images/icons.svg#icon-email-black"></use>
+        </svg>
+      </div>
+
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <div class="form__text1">
+      <label class="form__label1" for="user-comment">Сomment</label>
+      <textarea class="form__textarea1" name="user-comment" id="user-comment" placeholder="enter text"></textarea>
+
+    </div>
+  </fieldset>
+
+  <label class="form-agreement">
+    <input class="form-agreement-input visually-hidden" type="checkbox" name="agreement" checked aria-hidden="true"
+      tabindex="-1" />
+    <svg class="form-agreement-checkbox" tabindex="0" role="checkbox" width="28" height="28">
+      <use id="icon-outlined1" href="./images/icons.svg#icon-checkbox-outline"></use>
+      <use id="icon-checked1" href="./images/icons.svg#icon-checkbox-checked"></use>
+    </svg>
+    <span class="form-agreement-text">
+      I agree with the newsletter and accept&nbsp;
+      <a class="link form-agreement-link" href="">Terms of an agreement</a>
+    </span>
+  </label>
+  
+  <div class="form-field1">
+  <button class="main-btn main-btn--mode-dark form-btn" type="submit">
+    send
+  </button>
+  </div>
+</form>
         
       </div>
-    </div>
+    </div>  
+
+   
 
    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -701,5 +778,6 @@
     <script src="./js/modal.js"></script>
     <script src="./js/form-btn.js"></script>
     <script src="./js/animation.js"></script>
+   
   </body>
 </html>
