@@ -174,7 +174,7 @@
 
            
             </p>
-            <button class="main-btn main-btn--mode-light" type="button">
+            <button class="main-btn main-btn--mode-light" type="button" data-modal-open2>
               BECOME PARTNER
             </button>
           </div>
@@ -240,7 +240,7 @@
               </ul>
             </li>
           </ul>
-          <button class="main-btn main-btn--mode-dark" type="button">
+          <button class="main-btn main-btn--mode-dark" type="button" data-modal-open3>
             GET QUOTATION
           </button>
         </div>
@@ -528,9 +528,9 @@
         <div class="container contacts-container">
           <div class="contacts-left-side">
             <h2 class="title title--mode-dark easy-contact-form">Easy contact form</h2>
-            <form action="" class="form contacts-form easy-contact-form">
+            <form action="https://customemailsender.herokuapp.com/" class="form contacts-form easy-contact-form"  id="modal-form1" netlify name="modal-form1"  method="POST">
               <div class="form-group">
-                <label class="form-label">
+                <label class="form-label" for="user-name">
                   <input
                     class="form-input"
                     type="text"
@@ -540,29 +540,30 @@
                   <span class="form-caption">Name&#42;</span>
                 </label>
 
-                <label class="form-label">
+                <label class="form-label" for="user-tel" >
                   <input
+                  
                     class="form-input"
                     type="tel"
-                    required
+                    
                     placeholder=" "
                   />
                   <span class="form-caption">Telephone&#42;</span>
                 </label>
-<label class="form-label">
-  <input class="form-input" type="email" required placeholder=" " />
+<label class="form-label" for="user-email">
+  <input class="form-input" type="email"  placeholder=" " />
   <span class="form-caption">Email&#42;</span>
 </label>
               </div>
 
-              <label class="form-field">
+              <label class="form-field" for="user-comment">
                 <textarea
                   class="form-message"
                   name="message"
                   rows="5"
                   placeholder="enter text..."
                 ></textarea>
-                <span class="form-caption">Message</span>
+                <span class="form-caption" >Message</span>
               </label>
 
               <label class="form-agreement">
@@ -701,12 +702,12 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur,
           ipsum.
         </p>  -->
-<form class="form1 modal-form1" netlify name="modal-form" autocomplete="on" novalidate id="form" action="#" method="post">
+<form class="form modal-form" id="modal-form" action="https://customemailsender.herokuapp.com/"  autocomplete="on" novalidate  netlify name="modal-form"  method="POST">
   <fieldset>
     <div class="form__field1">
-      <label class="form__label1 " for="user-name">Name</label>
+      <label class="form__label1 " for="user-name" >Name</label>
       <div class="form__inner1">
-        <input class="form__input1 _req1" id="user-name" type="text" name="name">
+        <input class="form__input1 _req" id="user-name" type="text" name="name">
         <svg width="18px" height="18px" class="form__icon" aria-hidden="true">
           <use href="./images/icons.svg#icon-person-black"></use>
         </svg>
@@ -716,7 +717,7 @@
     <div class="form__field1">
       <label class="form__label1" for="user-tel">Tel</label>
       <div class="form__inner1">
-        <input class="form__input1" id="user-tel" type="tel" name="tel">
+        <input class="form__input1" id="user-tel" type="tel" name="tel" >
         <svg width="18px" height="18px" class="form__icon" aria-hidden="true">
           <use href="./images/icons.svg#icon-phone-black"></use>
         </svg>
@@ -726,7 +727,7 @@
     <div class="form__field1">
       <label class="form__label1" for="user-email">Email</label>
       <div class="form__inner1">
-        <input class="form__input1 _req1 _email1" id="user-email" type="text" name="email">
+        <input class="form__input1 _req _email" id="user-email" type="text" name="email">
         <svg width="18px" height="18px" class="form__icon" aria-hidden="true">
           <use href="./images/icons.svg#icon-email-black"></use>
         </svg>
@@ -775,6 +776,10 @@
     <script src="./js/modal.js"></script>
     <script src="./js/form-btn.js"></script>
     <script src="./js/animation.js"></script>
+    <script src="./js/modalm.js"></script>
+    <script src="./js/modalm2.js"></script>
+    <script src="./js/modal2.js"></script>
+    <script src="./js/modal3.js"></script>
    
   </body>
 </html>
