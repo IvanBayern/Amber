@@ -1200,11 +1200,6 @@ img {
   cursor: context-menu;
   overflow: hidden;
 }
-@media screen and (max-width: 479px) {
-  .team-thumb {
-    max-width: 350px;
-  }
-}
 
 .team-descr {
   display: flex;
@@ -1320,11 +1315,6 @@ img {
 .socials-link-linkedin {
   background-image: url(../images/icons/linkedin.svg);
 } */
-@media screen and (max-width: 479px) {
-  .team-avatar {
-    max-width: 350px;
-  }
-}
 @media screen and (min-width: 768px) {
   .team-avatar {
     max-width: 370px;

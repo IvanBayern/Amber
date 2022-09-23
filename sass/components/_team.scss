@@ -34,9 +34,9 @@
 
 .team-thumb {
   
-  @media screen and (max-width: 479px) {
-      max-width: 350px;
-    }
+  // @media screen and (max-width: 479px) {
+  //     max-width: 350px;
+  //   }
   position: relative;
   cursor: context-menu;
 
@@ -167,9 +167,9 @@
   background-image: url(../images/icons/linkedin.svg);
 } */
 .team-avatar{
-@media screen and (max-width: 479px) {
-    max-width: 350px;
-  }
+// @media screen and (max-width: 479px) {
+//     max-width: 350px;
+//   }
     
     @media screen and (min-width: 768px) {
         max-width: 370px;
