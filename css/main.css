@@ -1196,17 +1196,13 @@ img {
 }
 
 .team-thumb {
+  position: relative;
   cursor: context-menu;
   overflow: hidden;
 }
 @media screen and (max-width: 479px) {
   .team-thumb {
     max-width: 350px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .team-thumb {
-    position: relative;
   }
 }
 
