@@ -1,23 +1,37 @@
 /* About us */
 .about-container {
-  display: flex;
+
+  @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  
   
 }
 
 .about-list {
-  display: flex;
+  @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  
 }
 
 .about-item {
-  margin-right: 30px;
+  @media screen and (min-width: 768px) {
+      margin-right: 30px;
+    }
+ 
 }
 .about-item:last-child {
-  margin-right: 0;
+  @media screen and (min-width: 768px) {
+      margin-right: 0;
+    }
+  
 }
 
 .about-wrapper {
-  width: 500px;
+  max-width: 500px;
   margin-left: auto;
+  
 }
 
 .about-descr {
