@@ -1,7 +1,13 @@
 /* Advantages */
 .advantages-container {
-  display: flex;
-  gap: 30px;
+
+
+  @media screen and (min-width: 768px) {
+      display: flex;
+        gap: 30px;
+    }
+
+  
 }
 
 .advantages-left-side,

@@ -1,6 +1,7 @@
 /* About us */
 .about-container {
   display: flex;
+  
 }
 
 .about-list {
@@ -27,4 +28,9 @@
   letter-spacing: 0.02em;
 
   color: var(--main-txt--mode-light);
+}
+.about-img{
+  @media screen and (max-width: 767px) {
+      display: none;
+    }
 }

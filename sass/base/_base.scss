@@ -18,8 +18,26 @@ img {
 }
 
 .section {
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding-top: 30px;
+    padding-bottom: 30px;
+  @media screen and (min-width: 480px) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+  
+    }
+  
+    @media screen and (min-width: 768px) {
+      padding-top: 60px;
+        padding-bottom: 60px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      padding-top: 130px;
+        padding-bottom: 130px;
+  
+    }
+
+  
 }
 
 .uppertitle {
@@ -55,14 +73,28 @@ img {
 
 .title {
   margin-bottom: 20px;
+  
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+  
+    color: var(--secondary-txt--mode-light);
 
-  font-family: $secondary-font;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
-
-  color: var(--secondary-txt--mode-light);
+  @media screen and (min-width: 1200px) {
+      margin-bottom: 20px;
+      
+        font-family: $secondary-font;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 1.17;
+        letter-spacing: 0.05em;
+      
+        color: var(--secondary-txt--mode-light);
+  
+    }
+  
 }
 
 .title--mode-light {
