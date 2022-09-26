@@ -528,38 +528,42 @@
         <div class="container contacts-container">
           <div class="contacts-left-side">
             <h2 class="title title--mode-dark easy-contact-form">Easy contact form</h2>
-            <form action="https://customemailsender.herokuapp.com/" class="form contacts-form easy-contact-form"  id="modal-form1" netlify name="modal-form1"  method="POST">
+            <form action="https://customemailsender.herokuapp.com/" class="form contacts-form easy-contact-form" id="modal-form1" netlify name="modal-form1"  method="POST">
               <div class="form-group">
-                <label class="form-label" for="user-name">
+                <label class="form-label" for="user-name1">
                   <input
+                  id="user-name1"
                     class="form-input"
                     type="text"
                     minlenght="3"
                     placeholder=" "
+                    name="name"
                   />
                   <span class="form-caption">Name&#42;</span>
                 </label>
 
-                <label class="form-label" for="user-tel" >
+                <label class="form-label" for="user-tel1" >
                   <input
-                  
+                  id="user-tel1"
                     class="form-input"
                     type="tel"
-                    
+                    name="tel"
                     placeholder=" "
                   />
                   <span class="form-caption">Telephone&#42;</span>
                 </label>
-<label class="form-label" for="user-email">
-  <input class="form-input" type="email"  placeholder=" " />
+<label class="form-label" for="user-email1">
+  <input class="form-input" id="user-email1" type="email" name="email" placeholder=" " />
   <span class="form-caption">Email&#42;</span>
 </label>
               </div>
 
-              <label class="form-field" for="user-comment">
+              <label class="form-field" for="user-comment1">
                 <textarea
+                
+                id="user-comment1"
                   class="form-message"
-                  name="message"
+                  name="user-comment"
                   rows="5"
                   placeholder="enter text..."
                 ></textarea>
@@ -758,7 +762,7 @@
   </label>
   
   <div class="form-field1">
-  <button class="main-btn main-btn--mode-dark form-btn" type="submit">
+  <button class="main-btn main-btn--mode-light form-btn " type="submit" >
     send
   </button>
   </div>

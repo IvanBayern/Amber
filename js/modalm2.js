@@ -1,7 +1,7 @@
-const sampleForm = document.getElementById("modal-form1");
+const sampleForm1 = document.getElementById("modal-form1");
 
 //Add an event listener to the form element and handler for the submit an event.
-sampleForm.addEventListener("submit", async (e) => {
+sampleForm1.addEventListener("submit", async (e) => {
   /**
    * Prevent the default browser behaviour of submitting
    * the form so that you can handle this instead.

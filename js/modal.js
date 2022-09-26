@@ -6,7 +6,7 @@
   };
 
   document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('form');
+    const form = document.getElementById('modal-form');
     form.addEventListener('submit', formSend);
     async function formSend(e) {
       e.preventDefault();
