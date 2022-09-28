@@ -33,10 +33,7 @@
           alert("error");
           form.classList.remove('_sending');
         }
-      } else {
-        alert('Fill in required fields');
-      }
-
+      } 
 
     }
     
