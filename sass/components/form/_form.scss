@@ -13,7 +13,16 @@
 .form-agreement {
   position: relative;
 
-  margin-bottom: 44px;
+  
+
+  @media screen and (min-width:280px) {
+      margin-bottom: 12px;
+  
+    }
+        @media screen and (min-width: 480px) {
+        margin-bottom: 24px;
+    
+        }
 }
 
 .form-group {
@@ -118,6 +127,9 @@
 .form-btn {
   opacity: 1;
   transition: opacity var(--anim-slow);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .form-btn:disabled {
