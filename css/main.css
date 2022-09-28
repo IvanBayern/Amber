@@ -325,6 +325,43 @@ img {
   font-size: 24px;
 }
 
+.scroll-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 90;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: var(--accent-cl);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 2px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+  animation: circle 1.5s ease alternate-reverse infinite;
+}
+.scroll-top__icon {
+  transform: rotate(-90deg);
+}
+
+.scroll-top--active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+@keyframes circle {
+  0% {
+    box-shadow: 0 0 0 0 #ff6c00;
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(241, 80, 21, 0.633);
+  }
+}
 /**
 |--------------------------------------------------
 | работа с формой
@@ -473,7 +510,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--accent-cl) url(../images/succusfulsend.png) center/100% no-repeat;
+  background: var(--primary-txt--mode-dark) url(../images/succusfulsend.png) center/100% no-repeat;
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s ease 0s;
@@ -1051,6 +1088,58 @@ img {
   .about-img {
     display: none;
   }
+}
+
+@media screen and (max-width: 767.98px) {
+  .info-hero {
+    position: absolute;
+    top: 105px;
+    left: 0;
+    z-index: 3;
+  }
+}
+.info-hero__secret-box {
+  position: absolute;
+  bottom: 35%;
+  left: -10%;
+  z-index: 5;
+  background-color: var(--color-light-bg);
+  width: 200px;
+  padding: 15px;
+  border-radius: 24px;
+  box-shadow: 0 0 10px 5px rgba(212, 20, 68, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0);
+  transition: all var(--anim);
+}
+@media screen and (min-width: 1200px) {
+  .info-hero__secret-box {
+    left: -5%;
+    width: 300px;
+    padding: 20px;
+  }
+}
+.info-hero__secret-text {
+  color: var(--color-description);
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 130%;
+}
+.info-hero__secret-text:not(:last-child) {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .info-hero__secret-text {
+    font-size: 14px;
+    line-height: 140%;
+  }
+}
+
+.active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
 }
 
 /* Price */

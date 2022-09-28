@@ -48,3 +48,57 @@
       display: none;
     }
 }
+
+.info-hero {
+  @include mq(mob-only) {
+    position: absolute;
+    top: 105px;
+    left: 0;
+    z-index: 3;
+  }
+
+  
+
+  &__secret-box {
+    position: absolute;
+    bottom: 35%;
+    left: -10%;
+    z-index: 5;
+    background-color: var(--color-light-bg);
+    width: 200px;
+    padding: 15px;
+    border-radius: 24px;
+    box-shadow: 0 0 10px 5px rgba(212, 20, 68, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+    transition: all var(--anim);
+
+    @include mq(desk) {
+      left: -5%;
+      width: 300px;
+      padding: 20px;
+    }
+  }
+
+  &__secret-text {
+    color: var(--color-description);
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 130%;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    @include mq(desk) {
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
+}
+.active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
