@@ -67,3 +67,34 @@
     box-shadow: 0 0 0 20px rgba(241, 80, 21, 0.633);
   }
 }
+
+.button-arrow {
+  display:none;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: var(--accent-cl);
+  transition: background-color var(--accent-cl);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-cl);
+  }
+
+  &:hover .button-arrow__icon,
+  &:focus .button-arrow__icon {
+    fill: white;
+  }
+
+  &__icon {
+    fill: var(--color-accent);
+    transition: fill var(--anim);
+  }
+
+  @include mq(desk) {
+    width: 26px;
+    height: 26px;
+  }
+}

@@ -362,6 +362,33 @@ img {
     box-shadow: 0 0 0 20px rgba(241, 80, 21, 0.633);
   }
 }
+.button-arrow {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: var(--accent-cl);
+  transition: background-color var(--accent-cl);
+}
+.button-arrow:hover, .button-arrow:focus {
+  background-color: var(--accent-cl);
+}
+.button-arrow:hover .button-arrow__icon, .button-arrow:focus .button-arrow__icon {
+  fill: white;
+}
+.button-arrow__icon {
+  fill: var(--color-accent);
+  transition: fill var(--anim);
+}
+@media screen and (min-width: 1200px) {
+  .button-arrow {
+    width: 26px;
+    height: 26px;
+  }
+}
+
 /**
 |--------------------------------------------------
 | работа с формой
