@@ -1,15 +1,15 @@
-// variables
+
 @import "./variables/variables";
 
-// utils
+
 @import "./utils/mixins";
 @import "./utils/visually-hidden";
 @import "./utils/animation-pulsate";
 
-// base styles
+
 @import "./base/base";
 
-// conponents main page
+
 @import "./components/btn";
 @import "./components/form/module";
 @import "./components/modal";

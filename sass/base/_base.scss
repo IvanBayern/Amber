@@ -2,9 +2,7 @@
 
 body {
   font-family: $main-font;
-  // font-size: 18px;
-  // line-height: 1.67;
-  // letter-spacing: 0.02em;
+  
 
   @include fonts(18px);
 
@@ -47,10 +45,7 @@ img {
 
   @include fonts(11px, 1.36, 0.1em, 600);
 
-  // font-weight: 600;
-  // font-size: 11px;
-  // line-height: 1.36;
-  // letter-spacing: 0.1em;
+  
   text-transform: uppercase;
 }
 

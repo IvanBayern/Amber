@@ -1,4 +1,4 @@
-/* Team */
+
 .team {
   background-color: var(--secondary-bg--mode-light);
   
@@ -85,94 +85,10 @@
   color: var(--accent-cl);
 }
 
-.team-wrapper .socials {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.socials-item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.socials-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 44px;
-  height: 44px;
-
-  background-color: #fff;
-  border-radius: 50%;
-
-  color: var(--secondary-txt--mode-light);
-
-  transition: background-color var(--anim-fast);
-
-  /* =======
-  Добавление иконки через свойство background-image
-  можно встретить такую запись, но не часто
-  ========*/
-  /* background-repeat: no-repeat;
-  background-size: 20px;
-  background-position: center; */
-}
-
-/* =======
-Смена заливки svg иконки через селектор родительского элемента
-========*/
-.socials-link:hover,
-.socials-link:focus {
-  background-color: var(--secondary-txt--mode-light);
-}
-
-.socials-link:hover .socials-icon,
-.socials-link:focus .socials-icon {
-  fill: var(--accent-cl);
-}
-
-.socials-icon {
-  fill: var(--secondary-txt--mode-light);
-
-  transition: fill var(--anim-fast);
-}
-
-/* =======
-Смена заливки svg иконки через свойство currentColor на самой иконке
-========*/
-.socials-link:hover,
-.socials-link:focus {
-  background-color: var(--secondary-txt--mode-light);
-  color: var(--accent-cl);
-}
-.socials-icon {
-  fill: currentColor;
-}
-
-/* .socials-link-insagram {
-  background-image: url(../images/icons/instagram.svg);
-}
-
-.socials-link-twitter {
-  background-image: url(../images/icons/twitter.svg);
-}
-
-.socials-link-facebook {
-  background-image: url(../images/icons/facebook.svg);
-}
-
-.socials-link-linkedin {
-  background-image: url(../images/icons/linkedin.svg);
-} */
 .team-avatar{
   max-width: 370px;
-  // margin-left: auto;
-  // margin-top: auto;
-  // max-width: 100%;
-// @media screen and (max-width: 479px) {
-//     max-width: 350px;
-//   }
+ 
     
     @media screen and (min-width: 768px) {
         max-width: 370px;

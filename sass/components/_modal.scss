@@ -1,4 +1,4 @@
-/* modal window */
+
 .backdrop {
   
   position: fixed;
@@ -180,21 +180,7 @@
   }
 }
 
-/*.checkbox-control{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 16px;
-    height: 15px;
-    margin-right: 7px;
-}
-/*.checkbox-icon{
-    opacity: 0;
-    fill: var(--black-txt-cl);
-}
-.checkbox-input:checked + .checkbox-icon{
-    opacity: 1;
-}*/
+
 .checkbox1 {
   position: relative;
   display: flex;

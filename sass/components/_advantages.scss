@@ -1,4 +1,4 @@
-/* Advantages */
+
 .advantages-container {
 
 
@@ -12,7 +12,10 @@
 
 .advantages-left-side,
 .advantages-right-side {
-  flex-basis: 50%;
+  @media screen and (min-width: 768px) {
+      flex-basis: 50%;
+    }
+  
 }
 
 .advantages-list {
