@@ -1364,6 +1364,8 @@ img {
 @media screen and (max-width: 767px) {
   .team-thumb {
     max-width: 358px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
